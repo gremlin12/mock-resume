@@ -1,28 +1,45 @@
-body {
-	font-family:'Lato', sans-serif;
+/* Style main font*/
+body {	
 	color: #747704;
+	font-family:'Lato', sans-serif;
 	font-weight: 300;
 }
-.text-muted {
+
+/* Style line under header */
+hr {
+	background-color: #BCBBBB;
 	color: #BCBBBB;
+	height: 3px;
 }
-.text-thin {
-	font-weight: 100;
+
+/* Set width of images in body */
+.img-responsive {
+	width: 100%;
 }
-.title-super {
-	font-size: 60px;
-}
+
+/* Place Udacity logo */
 .title-logo {
 	margin-top: 20px;
 }
+
+/* Style headings */
+.text-muted {
+	color: #BCBBBB;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.title-super {
+	font-size: 60px;
+}
+
 .col-md-4 h2{
 	text-transform: uppercase;
 }
+
+/* Style captions */
 .col-md-4 p {
 	color: #BCBBBB;
-}
-hr {
-	color: #BCBBBB;
-	background-color: #BCBBBB;
-	height: 3px;
 }

@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- Fix compatibility for Internet Explorer and mobile devices-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- Links to stylesheets, scripts, and fonts -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+  <!-- Container for body is needed for Bootstrap.  -->
   <div class="container">
+    <!-- Header starts here -->
     <div class="row">
+    <!-- Divs with class names "col-md" set length of rows and must be nested inside divs classed as "row" (required for Bootstrap grid). -->
       <div class="col-md-6">
         <img src="images/udacity.png" class="title-logo" height="100" width="100" alt="Udacity logo">
       </div>
@@ -24,14 +29,17 @@
     </div>
       <div class="row">
         <div class="col-md-12">
-          <hr>
+          <hr> 
         </div>
-      </div>
+      </div> <!-- End of header -->
+      <!-- Main content starts here -->
       <div class="row">
         <div class="col-md-12">
-          <img class="img-responsive" src="images/computer-coding-cat.jpg" width="100%">
+          <!-- Bootstrap class "img-responsive" automatically formats images for smaller screens -->
+          <img class="img-responsive" src="images/computer-coding-cat.jpg" alt="Cat asleep on computer">
         </div>
       </div>
+      <!-- Featured work section begins here. -->
       <div class="row">
         <div class="col-md-12">
           <h2 class="text-muted">Featured Work</h2>
@@ -39,32 +47,31 @@
       </div>
       <div class="row text-center">
         <div class="col-md-4">
-          <img class="img-responsive" src="images/doctor_who.png" data-toggle="modal" data-target="#appify" width="100%" height="200" alt="Doctor Who">
+          <img class="img-responsive" src="images/doctor_who.png" data-toggle="modal" data-target="#appify" height="200" alt="Doctor Who scrutinizes computer code">
           <h2>Appify</h2>
           <p>https://github.com/udacity/Appify/</p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="images/triffids.jpg" data-toggle="modal" data-target="#triffid"width="100%" alt="Triffids">
+          <img class="img-responsive" src="images/triffids.jpg" data-toggle="modal" data-target="#triffid" alt="Man eating plants">
           <h2>Triffid</h2>
           <p>https://github.com/udacity/Triffid/</p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="images/hal.jpg" data-toggle="modal" data-target= "#hal" width="100%" alt="Hal 9000">
+          <img class="img-responsive" src="images/hal.jpg" data-toggle="modal" data-target= "#hal" alt="Hal 9000, computer from '2001: A Space Odyssey'">
           <h2>Hal 9000</h2>
           <p>https:github/udacity/Hal/</p>
         </div>
       </div>
     </div>
-  </div>
-<!-- Modal appify-->
-<div class="modal fade" id="appify" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modal for Appify project -->
+<div class="modal fade" id="appify" tabindex="-1" role="dialog" aria-labelledby="appifyModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Appify Your Brain</h4>
+        <h4 class="modal-title" id="appifyModal">Appify Your Brain</h4>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" src="images/doctor_who.png">
+        <img class="img-responsive" src="images/doctor_who.png" alt="Doctor Who scrutinizes computer code">
         I turned my brain into a Google App! 
       </div>
       <div class="modal-footer">
@@ -73,15 +80,15 @@
     </div>
   </div>
 </div>
-<!-- Modal triffid-->
-<div class="modal fade" id="triffid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modal for Triffid project-->
+<div class="modal fade" id="triffid" tabindex="-1" role="dialog" aria-labelledby="triffidModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">The Triffid Project</h4>
+        <h4 class="modal-title" id="triffidModal">The Triffid Project</h4>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" src="images/triffids.jpg">
+        <img class="img-responsive" src="images/triffids.jpg" alt="Man eating plants">
         These man-eating plants were cultivated in my basement shortly after I appified my brain.
       </div>
       <div class="modal-footer">
@@ -90,15 +97,15 @@
     </div>
   </div>
 </div> 
-<!-- Modal hal-->
-<div class="modal fade" id="hal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modal for Hal Project -->
+<div class="modal fade" id="hal" tabindex="-1" role="dialog" aria-labelledby="halModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">HAL 9000</h4>
+        <h4 class="modal-title" id="halModal">HAL 9000</h4>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" src="images/hal.jpg">
+        <img class="img-responsive" src="images/hal.jpg" alt="HAL 9000, computer from '2001: A Space Odyseey'">
         This was my first foray into Artificial Intelligence. In the next phase of the project I will teach Hal to program himself.
       </div>
       <div class="modal-footer">
