@@ -23,8 +23,8 @@
         <img src="images/udacity.png" class="title-logo" height="100" width="100" alt="Udacity logo">
       </div>
       <div class="col-md-6 text-right text-uppercase">
-        <h1 class="text-thin title-super">Joe Schmoe</h1>
-        <h3>Front-End Ninja</h3>
+        <h1 class="text-thin title-super">Mark Giffen</h1>
+        <h3>Web Developer</h3>
       </div>
     </div>
       <div class="row">
@@ -36,7 +36,7 @@
       <div class="row">
         <div class="col-md-12">
           <!-- Bootstrap class "img-responsive" automatically formats images for smaller screens -->
-          <img class="img-responsive" src="images/computer-coding-cat.jpg" alt="Cat asleep on computer">
+          <img class="img-responsive" src="images/code.jpg" alt="Code on a screen">
         </div>
       </div>
       <!-- Featured work section begins here. -->
@@ -47,32 +47,31 @@
       </div>
       <div class="row text-center">
         <div class="col-md-4">
-          <img class="img-responsive" src="images/doctor_who.png" data-toggle="modal" data-target="#appify" height="200" alt="Doctor Who scrutinizes computer code">
-          <h2>Appify</h2>
-          <p>https://github.com/udacity/Appify/</p>
+          <img class="img-responsive" src="images/gamers.jpg" data-toggle="modal" data-target="#gamers" height="220" alt="Gamers program screenshot">
+          <h2>Social Network</h2>
+          <p><a href="https://github.com/gremlin12/social_network">https://github.com/gremlin12/social_network</a></p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="images/triffids.jpg" data-toggle="modal" data-target="#triffid" alt="Man eating plants">
-          <h2>Triffid</h2>
-          <p>https://github.com/udacity/Triffid/</p>
+          <img class="img-responsive" src="images/marathon_map.jpg" data-toggle="modal" data-target="#marathon_map" alt="Map screenshot">
+          <h2>Marathon Map</h2>
+          <p><a href="https://github.com/gremlin12/marathon_map">https://github.com/gremlin12/marathon_map</a></p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="images/hal.jpg" data-toggle="modal" data-target= "#hal" alt="Hal 9000, computer from '2001: A Space Odyssey'">
-          <h2>Hal 9000</h2>
-          <p>https:github/udacity/Hal/</p>
+          <img class="img-responsive" src="images/frogger.jpg" data-toggle="modal" data-target= "#frogger" height="220" alt="Arcade game screenshot">
+          <h2>Arcade Game</h2>
+          <p><a href="https://github.com/gremlin12/arcade-game">https://github.com/gremlin12/arcade-game</a></p>
         </div>
       </div>
     </div>
 <!-- Modal for Appify project -->
-<div class="modal fade" id="appify" tabindex="-1" role="dialog" aria-labelledby="appifyModal" aria-hidden="true">
+<div class="modal fade" id="gamers" tabindex="-1" role="dialog" aria-labelledby="gamersModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="appifyModal">Appify Your Brain</h4>
+        <h4 class="modal-title" id="gamersModal">Social Network</h4>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" src="images/doctor_who.png" alt="Doctor Who scrutinizes computer code">
-        I turned my brain into a Google App! 
+        A gamers' social network built with Python. The program takes as input a string of sentences containing user-names, social connections and gaming preferences, and sets up a network in the form of a Python dictionary. It can retrieve and manipulate network data to provide useful information, such as:<ul><li> Finding a path from one player in the network to another.</li><li> Listing the preferred games or connections of any given user.</li><li>Finding secondary connections (friends of friends).</li><li>Suggesting new social connections based on users' gaming preferences.</li></ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -81,15 +80,14 @@
   </div>
 </div>
 <!-- Modal for Triffid project-->
-<div class="modal fade" id="triffid" tabindex="-1" role="dialog" aria-labelledby="triffidModal" aria-hidden="true">
+<div class="modal fade" id="marathon_map" tabindex="-1" role="dialog" aria-labelledby="mapModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="triffidModal">The Triffid Project</h4>
+        <h4 class="modal-title" id="mapModal">Marathon Map</h4>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" src="images/triffids.jpg" alt="Man eating plants">
-        These man-eating plants were cultivated in my basement shortly after I appified my brain.
+        Marathon Map is an interactive web application that showcases local attractions and amenities in Marathon, Florida -- the heart of the Florida Keys! <br/><br/> The project relies on the Google Maps API and Places Library for its basic functionality and content. The Knockout.js and jQuery libraries provide additional structure and streamlining.<br/><br> Try it out <a href="http://gremlin12.github.io/marathon_map/">here.</a>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -98,15 +96,14 @@
   </div>
 </div> 
 <!-- Modal for Hal Project -->
-<div class="modal fade" id="hal" tabindex="-1" role="dialog" aria-labelledby="halModal" aria-hidden="true">
+<div class="modal fade" id="frogger" tabindex="-1" role="dialog" aria-labelledby="froggerModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="halModal">HAL 9000</h4>
+        <h4 class="modal-title" id="froggerModal">Arcade Game</h4>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" src="images/hal.jpg" alt="HAL 9000, computer from '2001: A Space Odyseey'">
-        This was my first foray into Artificial Intelligence. In the next phase of the project I will teach Hal to program himself.
+        A classic arcade game built with Object-Oriented JavaScript and HTML5 Canvas.<br/><br/>Try it out <a href="http://gremlin12.github.io/arcade-game/">here.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
